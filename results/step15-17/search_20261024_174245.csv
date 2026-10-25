@@ -1,0 +1,4 @@
+cycle,wall_s,img_stamp,odom_stamp,dt_img_minus_odom,status,flags,n_det,conf,x1,y1,x2,y2,u_c,phi_deg,z_a,z_b,xr,yr,psi_deg,px,py,X,Y,cluster_id
+1,0.000,4848.476,4848.492,-0.016,NO_PERSON,,0,,,,,,,,,,-2.0022,-0.5044,158.601,,,,,
+2,1.001,4849.710,4849.716,-0.006,NO_PERSON,,0,,,,,,,,,,-2.0022,-0.5044,158.601,,,,,
+3,2.001,4850.443,4850.430,0.013,NO_PERSON,,0,,,,,,,,,,-2.0022,-0.5044,158.601,,,,,

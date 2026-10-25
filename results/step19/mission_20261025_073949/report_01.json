@@ -1,0 +1,49 @@
+{
+  "mode": "plan",
+  "decision": "SPIN_NEXT",
+  "next_action": "spin_and_stop.py --spin → --dry-run → search_loop.py の順に1回ずつ実行する",
+  "inputs": [
+    {
+      "order": 1,
+      "round_id": "r01",
+      "csv": "/home/ubuntu/runs/mission_20261025_073949/r01/search_20261025_074000.csv",
+      "psi_rad": "0.9126",
+      "spin": "stay"
+    }
+  ],
+  "n_rounds": 1,
+  "rounds": [
+    {
+      "round_id": "r01",
+      "order": 1,
+      "psi_rad": 0.9125795089751634,
+      "after_spin": false,
+      "counts": {
+        "NO_PERSON": 3
+      },
+      "observed": true,
+      "unwrapped_rad": 0.0
+    }
+  ],
+  "clusters": [],
+  "spins": 0,
+  "cumulative_rad": 0.0,
+  "full_turn": false,
+  "full_turn_judgeable": true,
+  "expect_cumulative": null,
+  "reasons": [
+    "いまの向きでは根拠になる検出がない。次の向きへ旋回する"
+  ],
+  "errors": [],
+  "notes": [
+    "NO_PERSON はその向きに人物がいないことを意味しない",
+    "REPORTED はシミュレーション上で定義した確認条件を満たしたことだけを意味し、実際の発見を保証しない",
+    "クラスタは位置の近さでまとめたもので、同じ人物であることは保証しない",
+    "扇形の画角は幾何学的な値で、検出できる範囲ではない（検出の境界は未測定）"
+  ],
+  "meanings": [
+    "REPORTED: 同じ空間クラスタを別の観測ラウンドでも再観測し、設定した条件（根拠 3 回以上・2 ラウンド以上・座標ごとの標準偏差 0.15 m 以下・信頼度 0.5 以上・端の印なし）を満たしたという意味。シミュレーション上の判定で、実際の要救助者の発見や位置の正しさを保証しない",
+    "NO_PERSON: その周で人物が検出されなかったという記録。その向きに人物がいないことは意味しない",
+    "異常状態（ODOM_TIME_MISMATCH・CYCLE_ERROR・NO_IMAGE・NO_ODOM）は正常な未検出として扱わない"
+  ]
+}

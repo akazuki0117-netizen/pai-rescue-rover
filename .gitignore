@@ -1,0 +1,29 @@
+# ROS 2 / colcon
+build/
+install/
+log/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Model weights and large outputs
+*.pt
+*.onnx
+outputs/
+videos/
+*.mp4
+
+# Secrets and local settings
+.env
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

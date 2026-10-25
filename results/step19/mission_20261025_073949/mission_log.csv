@@ -1,0 +1,19 @@
+seq,state,next,detail,rounds,spins
+1,INIT,PRECHECK,出力先 /home/ubuntu/runs/mission_20261025_073949,0,0
+2,PRECHECK,OBSERVE,DRYRUN_OK（送信の部品は作っていない）,0,0
+3,OBSERVE,HEADING,r01: 終了コード 10、3 行,0,0
+4,HEADING,EVALUATE,r01: psi=0.9126 rad、旋回あり=False,1,0
+5,EVALUATE,APPROVE,いまの向きでは根拠になる検出がない。次の向きへ旋回する,1,0
+6,APPROVE,SPIN,承認あり,1,0
+7,SPIN,POSTCHECK,終了コード 0、結果 DONE、起動 True,1,1
+8,POSTCHECK,OBSERVE,旋回後の静止を確認（DRYRUN_OK）,1,1
+9,OBSERVE,HEADING,r02: 終了コード 10、3 行,1,1
+10,HEADING,EVALUATE,r02: psi=1.8455 rad、旋回あり=True,2,1
+11,EVALUATE,APPROVE,いまの向きでは根拠になる検出がない。次の向きへ旋回する,2,1
+12,APPROVE,SPIN,承認あり,2,1
+13,SPIN,POSTCHECK,終了コード 0、結果 DONE、起動 True,2,2
+14,POSTCHECK,OBSERVE,旋回後の静止を確認（DRYRUN_OK）,2,2
+15,OBSERVE,HEADING,r03: 終了コード 10、3 行,2,2
+16,HEADING,EVALUATE,r03: psi=2.7580 rad、旋回あり=True,3,2
+17,EVALUATE,APPROVE,いまの向きでは根拠になる検出がない。次の向きへ旋回する,3,2
+18,APPROVE,END_HELD,旋回の承認がない（No・空入力・時間切れ）,3,2

@@ -1,0 +1,143 @@
+{
+  "mode": "plan",
+  "decision": "RESEARCH",
+  "next_action": "旋回せず、同じ向きで search_loop.py をもう一度実行する",
+  "inputs": [
+    {
+      "order": 1,
+      "round_id": "r01",
+      "csv": "/home/ubuntu/runs/mission_20261025_081118/r01/search_20261025_081128.csv",
+      "psi_rad": "2.7275",
+      "spin": "stay"
+    },
+    {
+      "order": 2,
+      "round_id": "r02",
+      "csv": "/home/ubuntu/runs/mission_20261025_081118/r02/search_20261025_081148.csv",
+      "psi_rad": "-2.6329",
+      "spin": "spin"
+    },
+    {
+      "order": 3,
+      "round_id": "r03",
+      "csv": "/home/ubuntu/runs/mission_20261025_081118/r03/search_20261025_081208.csv",
+      "psi_rad": "-1.7102",
+      "spin": "spin"
+    },
+    {
+      "order": 4,
+      "round_id": "r04",
+      "csv": "/home/ubuntu/runs/mission_20261025_081118/r04/search_20261025_081229.csv",
+      "psi_rad": "-0.7773",
+      "spin": "spin"
+    },
+    {
+      "order": 5,
+      "round_id": "r05",
+      "csv": "/home/ubuntu/runs/mission_20261025_081118/r05/search_20261025_081252.csv",
+      "psi_rad": "0.1454",
+      "spin": "spin"
+    }
+  ],
+  "n_rounds": 5,
+  "rounds": [
+    {
+      "round_id": "r01",
+      "order": 1,
+      "psi_rad": 2.727515191739931,
+      "after_spin": false,
+      "counts": {
+        "NO_PERSON": 3
+      },
+      "observed": true,
+      "unwrapped_rad": 0.0
+    },
+    {
+      "round_id": "r02",
+      "order": 2,
+      "psi_rad": -2.6329277333492223,
+      "after_spin": true,
+      "counts": {
+        "NO_PERSON": 3
+      },
+      "observed": true,
+      "unwrapped_rad": 0.9227423820904335
+    },
+    {
+      "round_id": "r03",
+      "order": 3,
+      "psi_rad": -1.7101945777800185,
+      "after_spin": true,
+      "counts": {
+        "NO_PERSON": 3
+      },
+      "observed": true,
+      "unwrapped_rad": 1.8454755376596372
+    },
+    {
+      "round_id": "r04",
+      "order": 4,
+      "psi_rad": -0.7773197812731287,
+      "after_spin": true,
+      "counts": {
+        "NO_PERSON": 3
+      },
+      "observed": true,
+      "unwrapped_rad": 2.778350334166527
+    },
+    {
+      "round_id": "r05",
+      "order": 5,
+      "psi_rad": 0.14537837917436178,
+      "after_spin": true,
+      "counts": {
+        "LOCATED": 3
+      },
+      "observed": true,
+      "unwrapped_rad": 3.7010484946140174
+    }
+  ],
+  "clusters": [
+    {
+      "cluster_id": 1,
+      "state": "CANDIDATE",
+      "n_evidence": 3,
+      "n_records": 0,
+      "evidence_rounds": [
+        "r05"
+      ],
+      "mean_XY": [
+        0.8751666666666668,
+        -0.9110999999999999
+      ],
+      "std_XY": [
+        0.011993887332025987,
+        0.016748432762500518
+      ],
+      "notes": [
+        "別の観測ラウンドでの再観測がない（ラウンド ['r05']）"
+      ],
+      "unverified_distance": false
+    }
+  ],
+  "spins": 4,
+  "cumulative_rad": 3.7010484946140174,
+  "full_turn": false,
+  "full_turn_judgeable": true,
+  "expect_cumulative": null,
+  "reasons": [
+    "いまの向きで根拠になる検出がある（クラスタ [1]）。別ラウンドで再観測する"
+  ],
+  "errors": [],
+  "notes": [
+    "NO_PERSON はその向きに人物がいないことを意味しない",
+    "REPORTED はシミュレーション上で定義した確認条件を満たしたことだけを意味し、実際の発見を保証しない",
+    "クラスタは位置の近さでまとめたもので、同じ人物であることは保証しない",
+    "扇形の画角は幾何学的な値で、検出できる範囲ではない（検出の境界は未測定）"
+  ],
+  "meanings": [
+    "REPORTED: 同じ空間クラスタを別の観測ラウンドでも再観測し、設定した条件（根拠 3 回以上・2 ラウンド以上・座標ごとの標準偏差 0.15 m 以下・信頼度 0.5 以上・端の印なし）を満たしたという意味。シミュレーション上の判定で、実際の要救助者の発見や位置の正しさを保証しない",
+    "NO_PERSON: その周で人物が検出されなかったという記録。その向きに人物がいないことは意味しない",
+    "異常状態（ODOM_TIME_MISMATCH・CYCLE_ERROR・NO_IMAGE・NO_ODOM）は正常な未検出として扱わない"
+  ]
+}

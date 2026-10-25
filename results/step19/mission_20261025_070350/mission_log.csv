@@ -1,0 +1,9 @@
+seq,state,next,detail,rounds,spins
+1,INIT,PRECHECK,出力先 /home/ubuntu/runs/mission_20261025_070350,0,0
+2,PRECHECK,OBSERVE,DRYRUN_OK（送信の部品は作っていない）,0,0
+3,OBSERVE,HEADING,r01: 終了コード 0、3 行,0,0
+4,HEADING,EVALUATE,r01: psi=0.1552 rad、旋回あり=False,1,0
+5,EVALUATE,OBSERVE,RESEARCH: いまの向きで根拠になる検出がある（クラスタ [1]）。別ラウンドで再観測する,1,0
+6,OBSERVE,HEADING,r02: 終了コード 0、3 行,1,0
+7,HEADING,EVALUATE,r02: psi=0.1552 rad、旋回あり=False,2,0
+8,EVALUATE,END_REPORTED,確認条件を満たしたクラスタ: [1]（シミュレーション上の判定）,2,0

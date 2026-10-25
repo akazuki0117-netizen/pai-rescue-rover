@@ -1,0 +1,2 @@
+cluster_id,n,mean_X,mean_Y,std_X,std_Y,max_conf,merge_radius,gt_X,gt_Y,err_X,err_Y,err_planar
+1,10,0.8922,-0.8603,0.0069,0.0357,0.930,0.5,,,,,
